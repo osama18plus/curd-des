@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="keywordes" content=""/>
+        <meta name="discription" content=""/>
+        <meta name="viewport" content="width=devicewidth,ini-tial-scale=l"/>
+        <title>card details</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/fontawesome.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <div class="contaner">
+            <div class="content_left">
+                <div class="front_card">
+                    <img class="logo_card" src="images/card-logo.svg" alt="logo"/>
+                    <span class="card_num" id="output" style="letter-spacing: 0;"></span>
+                    <div class="name_MM_YY">
+                        <div class="name" id="name"></div>
+                        <div class="MM_YY"><span id="MMInnerHtml"></span>/<span id="YYInnerHtml"></span></div>
+                    </div>
+                </div>
+                <div class="back_card">
+                    <span id="cvc"></span>
+                </div>
+            </div>
+            <div class="content_right">
+                <div class="info">
+                    <span class="caption">cardholder name</span>
+                    <input type="text" placeholder="E.G.NAME" id="InputName">
+                    <span id="wrong_msg2" class="wrong_msg">Wrong format</span>
+                    <span class="caption">card number</span>
+                    <input type="number" placeholder="E.G.1234 5678 9123 0000" id="CardNumber">
+                    <span id="wrong_msg" class="wrong_msg">Wrong format</span>
+                    <div class="info_CVC_DATE">
+                        <span class="span">exp.date (MM/YY)</span>
+                        <span class="span">cvc</span>
+                        <div class="date">
+                            <input type="number" placeholder="MM" id="MM">
+                            <input type="number" placeholder="YY" id="YY">
+                            <input class="cvc_input" type="number" placeholder="E.G 123" id="InputCvC">
+                        </div>
+                        <span id="cant_blank1">Error Value</span>
+                        <span id="cant_blank2">Error Value</span>
+                    </div>
+                    <button type="submit" id="confirm" class="confirm">confirm</button>
+                </div>
+            </div>
+            <div class="thank_you" id="ThankYou">
+                <img src="images/icon-complete.svg">
+                <h2>thank you!</h2>
+                <p>we've added your details</p>
+                <button id="continue">continue</button>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
